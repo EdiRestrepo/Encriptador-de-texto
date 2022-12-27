@@ -1,0 +1,308 @@
+@import '../utils/variables';
+
+.main-encriptador{
+    @include d-flex(flex-start, flex-start);
+    margin-bottom: 50px;
+}
+
+.logo{
+    width: 8.3%;
+    margin: 20px 0 0 70px;
+}
+
+.encriptador{
+    width: 47.2%;
+    margin: 24px 80px 0 0;
+
+    &__title{
+        font-weight: 700;
+        font-size: 30px;
+        color: $second-text-color;
+        margin-bottom: 60px;
+        font-family: 'Roboto', sans-serif;
+        
+    }
+}
+
+
+.form-encriptador{
+
+    &__textarea{
+      
+        resize: none;
+        border: 0;
+        outline: none;
+        background: $background;
+        color: $second-text-color;
+        font-size: 32px;
+
+    }
+
+    &__textarea::placeholder{
+        font-size: 32px;
+        color: $second-text-color;
+    }
+
+    &__svg{
+        font-size: 12px;
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        margin-bottom: 16px;
+    }
+}
+
+.form-button{
+    display: flex;
+    gap: 24px;
+    
+    &__encriptador{
+        width: 40%;
+        height: 50px;
+        border-radius: 15px;
+        border: none;
+        line-height: 1.19;
+        color: $primary-white-color;
+        background: $second-text-color;
+        cursor: pointer;
+        transition: 1s all;
+    }
+
+    &__desencriptador{
+        width: 40%;
+        height: 50px;
+        border-radius: 15px;
+        border: 1px solid $second-text-color;
+        line-height: 1.19;
+        color: $second-text-color;
+        background: $background-main;
+        cursor: pointer;
+        transition: 1s all;
+    }
+
+    .form-button__encriptador:hover,
+    .form-button__desencriptador:hover{
+        background: $background-hover;
+        transform: scale(1.1);
+    }
+
+    .form-button__encriptador:focus,
+    .form-button__desencriptador:focus{
+        background: $background-focus;
+        font-weight: 700;
+    }
+
+}
+
+
+.show-text{
+    width: 27.7%;
+    margin: 20px 40px 0 0;
+    padding: 0px 45px;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+    background: $primary-white-color;
+
+    .show-text__textarea{
+        width: 100%;
+        resize: none;
+        border: 0;
+        outline: none;
+        font-size: 24px;
+        margin: 39px 0px;
+        display: none;
+
+    }
+
+    .show-text__img{
+        width: 80%;
+        padding-top: 100px;
+        margin-left:  20px;
+    }
+
+    &__p1{
+        margin-bottom: 16px;
+        font-weight: 700;
+        font-size: 24px;
+        color: $black-1;
+        text-align: center;
+    }
+
+    &__p2{
+        color: $black-2;
+        text-align: center;
+        padding-bottom: 100px;
+    }
+
+    &__button{
+        width: 95%;
+        height: 50px;
+        border-radius: 15px;
+        border: 1px solid $second-text-color;
+        line-height: 1.19;
+        color: $second-text-color;
+        background: $primary-white-color;
+        margin-bottom: 32px;
+        margin-left: 10px;
+        display: none;
+        cursor: pointer;
+        transition: 1s all;
+    }
+
+    .show-text__button:hover{
+        background: $background-hover;
+        transform: scale(1.1);
+    }
+
+    .show-text__button:focus{
+        background: $background-focus;
+        font-weight: 700;
+    }
+}
+
+  @media only screen and (min-width: 767.98px) and (max-width:1200.01px){
+
+    .main-encriptador{
+    @include d-flex(flex-start, flex-start, column);
+    }
+
+    .logo{
+        width: 80%;
+        margin: 70px 0 0 70px;
+    }
+    
+    .encriptador{
+        width: 80%;
+        margin: 30px auto 0 auto;
+    
+        &__title{
+            display: none;
+        }
+    }
+
+    .form-encriptador{
+        width: 80%;
+        margin: 0 auto;
+        padding-top: 50px;
+        padding-bottom: 60px;
+    }
+
+    .show-text{
+        width: 80%;
+        margin: 0 auto;
+        padding-top: 30px;
+    }
+
+    .show-text__img{
+        display: none;
+    }
+
+}
+
+    @media only screen and (min-width: 481px) and (max-width:767.97px){
+
+        .main-encriptador{
+            @include d-flex(flex-start, flex-start, column);
+            }
+        
+            .logo{
+                width: 90%;
+                margin: 70px 0 0 70px;
+            }
+            
+            .encriptador{
+                width: 90%;
+                margin: 30px auto 0 auto;
+            
+                &__title{
+                    display: none;
+                }
+            }
+        
+            .form-encriptador{
+                width: 80%;
+                margin: 0 auto;
+                padding-top: 50px;
+                padding-bottom: 60px;
+            }
+
+            .form-button{
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .form-button__encriptador{
+                width: 100%;
+            }
+
+            .form-button__desencriptador{
+                width: 100%;
+            }
+        
+            .show-text{
+                width: 90%;
+                margin: 0 auto;
+                padding-top: 30px;
+            }
+        
+            .show-text__img{
+                display: none;
+            }
+
+  }
+
+  @media screen and (max-width:480px){
+
+    .main-encriptador{
+        @include d-flex(flex-start, flex-start, column);
+        }
+    
+        .logo{
+            width: 375px;
+            margin: auto;
+            padding-top: 30px;
+        }
+        
+        .encriptador{
+            width: 343px;
+            margin: 30px auto 0 auto;
+        
+            &__title{
+                display: none;
+            }
+        }
+    
+        .form-encriptador{
+            width: 343px;
+            margin: 0 auto;
+            padding-top: 50px;
+            padding-bottom: 60px;
+        }
+
+        .form-button{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .form-button__encriptador{
+            width: 100%;
+        }
+
+        .form-button__desencriptador{
+            width: 100%;
+        }
+    
+        .show-text{
+            width: 343px;
+            margin: 0 auto;
+            padding-top: 30px;
+        }
+    
+        .show-text__img{
+            display: none;
+        }
+
+
+}

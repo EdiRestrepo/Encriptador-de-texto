@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/modern-normalize.css">
+    <link rel="stylesheet" href="css/main.min.css">
+    <title>Encriptador JS</title>
+</head>
+
+<body>
+    <main class="main-encriptador">
+        <section class="logo">
+            <svg class="logo__alura" width="32" height="48">
+            <use href="images/SVG/sprite.svg#logo-alura"></use>
+        </section>
+        <section class="encriptador">
+            <h1 class="encriptador__title">Encriptar - Desencriptar Texto con JavaScript</h1>
+            <form class="form-encriptador" action="">
+                <textarea class="form-encriptador__textarea" name="" id="text-encryted" cols="40%" rows="9" placeholder="Ingrese el texto aqui"></textarea>
+                <div class="form-encriptador__svg">
+                    <svg class="form-encriptador__exclamacion" width="16" height="16">
+                    <use href="images/SVG/sprite.svg#exclamacion"></use>
+                    <p>Solo letras minúsculas y sin acentos</p>
+                </div>
+                <div class="form-button">
+                    <button class="form-button__encriptador" type="button" id="button-encrypted">Encriptar</button>
+                    <button class="form-button__desencriptador" type="button" id="button-unencrypted">Desencriptar</button>
+                </div>
+            </form>
+        </section>
+        <section class="show-text">
+            <form action="">
+                <textarea class="show-text__textarea" name="" id="text-unencrypted" cols="26" rows="13"></textarea>
+                <div id="hide-image">
+                    <img class="show-text__img" src="images/SVG/munheco.svg" alt="muñeco">
+                    <p class="show-text__p1">Ningún mensaje fue encontrado</p>
+                    <p class="show-text__p2">Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>
+                <button class="show-text__button" id="button-copy" type="button">Copiar</button>
+            </form>
+        </section>
+    </main>
+    <script src="js/main.js"></script>
+</body>
+</html>

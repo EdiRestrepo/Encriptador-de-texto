@@ -1,0 +1,27 @@
+$main-color: darkblue;
+
+$background-main: #D8DFE8;
+
+$background: #F3F5FC;
+
+$background-hover: #ABEBC6;
+$background-focus: #C39BD3;
+
+$primary-white-color: white; 
+$primary-black-color: #000000;
+$primary-gray-color: gray;
+
+$gray-1: #E8E8E8;
+$gray-2: #9B9797;
+$black-1: #343A40;
+$black-2: #495057;
+
+$second-text-color: #0a3871;
+
+@mixin d-flex($aling: center, $justify: center, $direction: row){
+    display: flex;
+    flex-direction: $direction;
+    align-items: $aling;
+    justify-content: $justify;
+}
+
