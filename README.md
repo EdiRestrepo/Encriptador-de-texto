@@ -1,7 +1,7 @@
 # Challenge ONE - Alura
 
 
-### Encriptador de texto con Javascript
+### Encriptador de texto con Javascript - HTML5 - CSS3 - SASS
 
 ---
 ### Edison Estival Restrepo Ospina 
